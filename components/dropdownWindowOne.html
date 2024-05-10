@@ -6,7 +6,9 @@
         </style>
     </head>
     <body>
-        <div class="dropdown-window-one-container flex flex-col border-2  border-black rounded-xl bg-yellow-200  w-3/4 h-full">
+        <div class="flex flex-col w-3/5">
+
+        <div class="dropdown-window-one-container flex flex-col border-2  border-black rounded-xl bg-yellow-200 ">
             <div class="bg-red-300 flex justify-end gap-4 pt-2 pb-2 border-b-2 border-black pr-4 rounded-t-xl">
                 <div style="height: 28px; display: flex; gap: 5%;">
                     <div class="bg-white border-2 border-black"><span class="material-symbols-outlined pr-0.5">minimize</span></div>
@@ -15,16 +17,27 @@
                 </div>
             </div>
             <div class="border-b-2 border-black flex justify-between pt-2 pb-2 pr-4 pl-4 gap-2">
-                <div class="font-sm"><p>Projects</p></div>
-                <div class="w-full">
+                <div class="text-xl flex justify-center"><p>Projects</p></div>
+                <div class="w-full text-xl">
                     <select ng-model="selectedProject" ng-options="project.title for project in projectsCarousel" ng-change="displaySelectedProject()" class="custom-select w-3/4 border-2 border-black pl-2"></select>
                 </div>
               
             </div>
             <div>
                 <div class="flex gap-2 h-full">
-                    <div class="bg-white h-full w-full border-2 border-black mt-4 mb-4 ml-4 mr-4">
-                        <img style="height: 300px; width: 100%;" src="{{ selectedProject.image }}">
+                    <div class="bg-white w-full border-2 border-black mt-4 mb-4 ml-4 mr-4">
+                        <div style="height: 450px; width: 100%; background-color: #3131ff;">
+                            <img ng-if="selectedProject" style="height: 450px; width: 100%;" src="{{ selectedProject.image }}">
+                            <div ng-hide="selectedProject" style="height: 100%; width: 100%; transform: translateY(50px); margin-bottom: 15%;">
+                                <div class="border-black border-2 bg-white flex justify-center mx-8">
+                                    <div class="mb-4">
+                                    <div class="flex gap-2 my-6"><div><span class="material-symbols-outlined" style="color: white; font-size: 40px; background-color: red; border-radius: 50%; border: 2px solid black;">close</span></div> <div class="mt-2"><span class="text-3xl"><p>No project selected</p></span></div></div>
+                                    <div style="box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); border: 2px solid black; width: 70px; margin-left: 35%;"><p class="text-3xl pl-4">OK</p></div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
                     </div>
                     <!--Scroll-->
                    
@@ -37,9 +50,46 @@
                 </div>
             </div>
 
-            <div style="height: 3.5vh; width: 100%; background-color: none; border: 2px solid black; border-bottom: none; border-left: none; border-right: none;">
+            <div style="height: 20px; width: 100%; background-color: none; border: 2px solid black; border-bottom: none; border-left: none; border-right: none;">
                 <div style="width: 40%; height: 100%; background-color: none; border: 2px solid black; border-left: none; border-top: none; border-bottom: none;"></div>
                         </div>
         </div>
+
+        
+        <div ng-if="selectedProject" style="margin-bottom: 1%; width: 70%; transform: translate(-30px, -45px);">
+            <div class="window-two-container border-2 border-black rounded-xl bg-white w-full">
+                <div class="bg-pink-200 flex justify-end gap-4 pt-2 pb-2 border-b-2 rounded-t-xl border-black pr-4">
+                    <div style="height: 28px; display: flex; gap: 5%;">
+                        <div class="bg-white border-2 border-black"><span class="material-symbols-outlined">minimize</span></div>
+                        <div class="bg-white border-2 border-black"><span class="material-symbols-outlined ">square</span></div>
+                        <div class="bg-white border-2 border-black"><span class="material-symbols-outlined">close</span></div>
+                    </div>
+                </div>
+                <div style="height: 100%; z-index: 2000;">
+                    <div class="h-full px-4 py-4"><p class="text-3xl">{{ selectedProject.caption }}</p></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div  ng-if="selectedProject" style="display: flex; margin-bottom: 10%; width: 70%; transform: translate(310px, -90px); position: sticky;">
+            <div class="window-two-container border-2 border-black rounded-xl bg-white w-full">
+                <div class="bg-yellow-300 flex justify-end gap-4 pt-2 pb-2 border-b-2 rounded-t-xl border-black pr-4">
+                    <div style="height: 28px; display: flex; gap: 5%;">
+                        <div class="bg-white border-2 border-black"><span class="material-symbols-outlined">minimize</span></div>
+                        <div class="bg-white border-2 border-black"><span class="material-symbols-outlined ">square</span></div>
+                        <div class="bg-white border-2 border-black"><span class="material-symbols-outlined">close</span></div>
+                    </div> 
+                </div>
+                <div style="width: 100%">
+                    <div class="px-4 py-4"><p class="text-3xl">{{ selectedProject.stack }}</p></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+    
+    
     </body>
 </html>
