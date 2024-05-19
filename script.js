@@ -2,6 +2,7 @@ var app = angular.module('portfolioApp', ["ngRoute", "ngCookies"]);
 
 app.controller('appCtrl', function($scope, $filter, $timeout, $cookies){
     $scope.route = '';
+    console.log($scope.selectedProject);
 
 $scope.projectsCarousel = [
     {
@@ -19,7 +20,9 @@ $scope.projectsCarousel = [
         NodeJS,
         Google Material Icons,
         ChatGpt API,
-        `
+        `,
+        deployLink: `https://themes-ai.onrender.com/#!/`,
+        repo: `https://github.com/raquelindia/ai-project`
     },
     {
         image: "./projects-files/images/mobile-mars-weather-app.png",
@@ -31,7 +34,9 @@ $scope.projectsCarousel = [
         Tailwind,
         Render,
         Google Material Icons
-        `
+        `,
+        deployLink: `https://mars-weather-app.onrender.com/#!/`,
+        repo: `https://github.com/raquelindia/mars-weather-app`
     }
 ];
 

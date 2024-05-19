@@ -85,13 +85,22 @@
                 </div>
             </div>
             <div style="width: 100%; margin-left: 4%; margin-bottom: 4%;">
-                    <div class="terminal-text text-green-300 text-lg pt-6">RaquelCruz@RaquelCruz: AI ASSISTANT LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text ">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: MARS WEATHER APP LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: AI ASSISTANT LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: MARS WEATHER APP LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: AI ASSISTANT LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: MARS WEATHER APP LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: AI ASSISTANT LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
+                <div ng-if="selectedProject">
+                    <div class="terminal-text text-green-300 text-lg pt-6">RaquelCruz@RaquelCruz: DEPLOYED APP: <a href="{{ selectedProject.deployLink  }}" class="underline text-green-200 terminal-text ">HERE!!</a></div>
+                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: GITHUB REPO: <a href="{{ selectedProject.repo  }}" class="underline text-green-200 terminal-text">HERE!!</a></div>
+                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: DEPLOYED APP: <a href="{{ selectedProject.deployLink  }}" class="underline text-green-200 terminal-text ">HERE!!</a></div>
+                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: GITHUB REPO: <a href="{{ selectedProject.repo  }}" class="underline text-green-200 terminal-text">HERE!!</a></div>
+                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: DEPLOYED APP: <a href="{{ selectedProject.deployLink  }}" class="underline text-green-200 terminal-text ">HERE!!</a></div>
+                    <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: GITHUB REPO: <a href="{{ selectedProject.repo  }}" class="underline text-green-200 terminal-text">HERE!!</a></div>
+ 
+
+                </div>
+                 
+
+                    <div ng-hide="selectedProject">
+                        <div class="terminal-text text-green-300 text-lg pt-6">RaquelCruz@RaquelCruz: pwd</div>
+                        <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: /Users/raquelcruz/portfolio/projects</div>
+                    </div>
                     <div class="terminal-text text-green-300 text-lg flex"><div class="terminal-text text-green-300">RaquelCruz@RaquelCruz: </div><div class="blinking-div terminal-text text-green-300 bg-green-300 ml-2 mt-0.5" style="width: 10px; height: 20px;"></div> </div>
                     
             </div>
