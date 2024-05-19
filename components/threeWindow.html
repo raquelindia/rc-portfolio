@@ -34,22 +34,39 @@
         flex-direction: column;
      }
      .avatar-shadow {
-        margin-left: 14%;
+        margin-left: 30%;
         
      }
      .avatar-window-container {
         display: flex;
-        margin-left: 5%;
+  
      }
 
-     @media (max-width: 1000px) {
+     @media (max-width: 1200px) {
+        .avatar-shadow {
+        margin-left: 16%;
+        
+     }
+
         .avatar-window-container {
             flex-direction: column;
            
         }
         .windows {
             width: 55%;
-            margin-left: -8%;
+          
+        }
+     }
+
+     @media (max-width: 800px) {
+        .windows {
+        margin-left: -20%;
+        }
+        .avatar-container {
+            margin-left: -5%;
+        }
+        .avatar-shadow {
+            margin-left: 10%;
         }
      }
      

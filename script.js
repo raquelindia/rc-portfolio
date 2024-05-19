@@ -1,6 +1,7 @@
 var app = angular.module('portfolioApp', ["ngRoute", "ngCookies"]);
 
 app.controller('appCtrl', function($scope, $filter, $timeout, $cookies){
+    $scope.route = '';
 
 $scope.projectsCarousel = [
     {
