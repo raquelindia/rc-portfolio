@@ -1,12 +1,1343 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            @keyframes moveUpDown {
+         0%, 100% { transform: translateY(0); }
+         50% { transform: translateY(-15px); }
+     }
 
+     .avatar-container {
+         animation: moveUpDown 3s ease infinite;
+     }
+
+   
+     @keyframes blink {
+         0% { opacity: 1; }
+         50% { opacity: 0; }
+         100% { opacity: 1; }
+     }
+
+     .blinking-div {
+         animation: blink 0.8s infinite;
+     }
+
+     /* Optional styling for the blinking div */
+     .blinking-div {
+         width: 100px;
+         height: 100px;
+    
+     }
+
+     .avatar-shadow-container {
+        display: flex;
+        flex-direction: column;
+     }
+     .avatar-shadow {
+        margin-left: 14%;
+        
+     }
+     .avatar-window-container {
+        display: flex;
+        margin-left: 5%;
+     }
+
+     @media (max-width: 1000px) {
+        .avatar-window-container {
+            flex-direction: column;
+           
+        }
+        .windows {
+            width: 55%;
+            margin-left: -8%;
+        }
+     }
+     
+    
+     </style>
     </head>
     <body>
-        <div >
+        <div class="avatar-window-container">
+        <div class="avatar-shadow-container">
+        <div class="avatar-container flex">
+            <!--col one-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 2-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 3-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 4-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 5-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 6-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 7-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 8-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 9-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 10-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 11-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #3f2e22; width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 12-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+            <div style="background-color:rgb(102, 59, 12)">    <div class="blinking-div" style="background-color: white; width: 12px; height: 12px;"></div></div>
+                <div style="background-color: rgb(102, 59, 12); width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 13-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(102, 59, 12); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(102, 59, 12); width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 14-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: gray; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(135, 155, 135); width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 15-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: gray; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 16-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: darkred; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: gray; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(135, 155, 135); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 17-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: darkred; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: gray; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(135, 155, 135); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 18-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: gray; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(135, 155, 135); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 19-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: gray; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(135, 155, 135); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 20-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(102, 59, 12); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(102, 59, 12); width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(135, 155, 135); width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 21-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color:rgb(102, 59, 12)">    <div class="blinking-div" style="background-color: white; width: 12px; height: 12px;"></div></div>
+                <div style="background-color: rgb(102, 59, 12); width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(97, 144, 97); width: 12px; height: 12px;"></div>
+                <div style="background-color: green; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 22-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #3f2e22; width: 12px; height: 12px;"></div>
+                <div style="background-color: #785b47; width: 12px; height: 12px;"></div>
+                <div style="background-color: white; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 23-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #F1BD98; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 24-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: #FFCDA9; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 25-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 26-->
+            <div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 27-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: #1f1e1d; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 28-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: #64605e; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 29-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: rgb(223, 223, 44); width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 30-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 31-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: yellow; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+            
+            <!--col 32-->
+            <div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: black; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+                <div style="background-color: none; width: 12px; height: 12px;"></div>
+            </div>
+                    </div>
+                 
+
+                    <div class="avatar-shadow flex  mt-4 mb-4">
+                        <div style="display: flex;">
+        
+                    
+                        <!--col 1-->
+                     <div>
+                         <div class="animated-div" style="background-color: none; width: 12px; height: 12px;"></div>
+                         <div class="animated-div" style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div" style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 2-->
+                        <div>
+                         <div  class="animated-div" style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 3-->
+                        <div>
+                         <div class="animated-div"  style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 4-->
+                        <div>
+                         <div class="animated-div"  style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 5-->
+                        <div>
+                         <div class="animated-div"  style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 6-->
+                        <div>
+                         <div class="animated-div"  style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 7-->
+                        <div>
+                         <div class="animated-div"  style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 8-->
+                        <div>
+                         <div class="animated-div"  style="background-color: gray; width: 12px; height: 12px;"></div>
+                         <div  class="animated-div" style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: whitesmoke; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                     </div>
+         
+                        <!--col 9-->
+                        <div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: darkgray; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: lightgray; width: 12px; height: 12px;"></div>
+                         <div  class="animated-div" style="background-color: none; width: 12px; height: 12px;"></div>
+                         <div class="animated-div"  style="background-color: none; width: 12px; height: 12px;"></div>
+                     </div>
+         </div>
+         
+                 </div>
+                </div>
+
+        <div>
             <div style="z-index: 2000; transform: translateX(50px);">
-                <div class="window-four-container border-2 border-black rounded-xl bg-white w-2/4">
+                <div class="windows window-four-container border-2 border-black rounded-xl bg-white w-2/4">
                     <div class="bg-green-200 flex justify-end gap-4 pt-2 pb-2 border-b-2 border-black pr-4 rounded-t-xl">
                         <div style="height: 28px; display: flex; gap: 5%;">
                             <div class="bg-white border-2 border-black"><span class="material-symbols-outlined pr-0.5">minimize</span></div>
@@ -20,7 +1351,7 @@
                 </div>
             </div>
             <div style="z-index: -2; transform: translate(70px, -280px);">
-                <div class="window-one-container border-2 border-black rounded-xl bg-white w-2/4">
+                <div class="windows window-one-container border-2 border-black rounded-xl bg-white w-2/4">
                     <div class="bg-purple-200 flex justify-end gap-4 pt-2 pb-2 border-b-2 rounded-t-xl  border-black pr-4">
                         <div style="height: 28px; display: flex; gap: 5%;">
                             <div class="bg-white border-2 border-black"><span class="material-symbols-outlined pr-0.5">minimize</span></div>
@@ -34,7 +1365,7 @@
                 </div>
             </div>
             <div style="z-index: -3; transform: translate(90px, -560px);">
-                <div class="window-three-container border-2 border-black rounded-xl bg-white w-2/4">
+                <div class="windows window-three-container border-2 border-black rounded-xl bg-white w-2/4">
                     <div class="bg-blue-200 flex justify-end gap-4 pt-2 pb-2 border-b-2 rounded-t-xl border-black pr-4">
                         <div style="height: 28px; display: flex; gap: 5%;">
                             <div class="bg-white border-2 border-black"><span class="material-symbols-outlined pr-0.5">minimize</span></div>
@@ -55,6 +1386,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>

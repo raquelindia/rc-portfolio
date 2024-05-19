@@ -6,6 +6,23 @@
                 font-family: "Roboto Condensed", sans-serif;
                 font-weight: 400;
             }
+
+            @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .blinking-div {
+            animation: blink 0.8s infinite;
+        }
+
+        /* Optional styling for the blinking div */
+        .blinking-div {
+            width: 100px;
+            height: 100px;
+       
+        }
        
         </style>
     </head>
@@ -75,7 +92,7 @@
                     <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: AI ASSISTANT LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
                     <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: MARS WEATHER APP LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
                     <div class="terminal-text text-green-300 text-lg">RaquelCruz@RaquelCruz: AI ASSISTANT LINK: <a href="https://www.exampleapp.com" class="underline text-green-200 terminal-text">HERE!!</a></div>
-                    <div class="terminal-text text-green-300 text-lg flex"><div class="terminal-text text-green-300">RaquelCruz@RaquelCruz: </div><div class="terminal-text text-green-300 bg-green-300 ml-2 mt-0.5" style="width: 10px; height: 20px;"></div> </div>
+                    <div class="terminal-text text-green-300 text-lg flex"><div class="terminal-text text-green-300">RaquelCruz@RaquelCruz: </div><div class="blinking-div terminal-text text-green-300 bg-green-300 ml-2 mt-0.5" style="width: 10px; height: 20px;"></div> </div>
                     
             </div>
         </div>

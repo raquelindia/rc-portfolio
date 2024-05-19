@@ -1,0 +1,75 @@
+ 
+
+@media (max-width: 1000px) {
+    .home-container {
+       flex-direction: column-reverse;
+        width: 100%;
+   
+    }
+
+   
+   
+
+}
+
+
+
+@media (max-width: 1400px) {
+    .home-container {
+       width: 70%;
+    }
+
+    .home-popup-container{
+        width: 800px;
+        margin-left: 50%;
+    }
+
+}
+
+
+@media (max-width: 1300px) {
+    .home-container {
+       width: 70%;
+    }
+
+    .home-popup-container{
+        width: 800px;
+        margin-left: 30%;
+    }
+  
+ 
+
+}
+
+@media (max-width: 1200px) {
+    .home-container {
+       width: 70%;
+    }
+
+    .home-popup-container{
+        width: 800px;
+        margin-left: 20%;
+    }
+  
+ 
+
+}
+
+
+@keyframes expandShrink {
+    0%, 100% {
+        width: 12px; /* Original width */
+    }
+    50% {
+        width: 20px; /* Double the original width */
+    }
+}
+
+.animated-div {
+    width: 12px; /* Initial width */
+    animation: expandShrink 2.6s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+
+
+
