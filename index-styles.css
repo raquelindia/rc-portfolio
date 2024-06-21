@@ -1,5 +1,5 @@
 h1 {
-    font-family: "Lilita One", sans-serif;
+    /* font-family: "Lilita One", sans-serif; */
     color: rgb(252, 182, 234);
     -webkit-text-stroke: 2px rgb(133, 184, 216);
     font-weight: 500;
@@ -11,7 +11,7 @@ h1 {
 }
 
 * {
-    font-family: "Jersey 20", sans-serif;
+    /* font-family: "Jersey 20", sans-serif; */
     font-weight: 100;
     color: rgb(53, 52, 52);
 }

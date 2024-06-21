@@ -4,18 +4,25 @@
 <head>
   <style>
     .notebook-paper {
-
       width: 100%;
       height: 100vh;
       background-image: linear-gradient(rgb(196, 158, 100) 0.5px, transparent 1px);
       background-size: 30px 30px;
 
     }
+
+    @media (max-width: 1000px) {
+      .notebook-paper {
+        width: 80%;
+      }
+
+}
+
   </style>
 </head>
 
 <body>
-  <div class="notebook-paper bg-yellow-200" style="width: 500px; height: 400px;">
+  <div class="notebook-paper bg-yellow-200" style="height: 400px;">
     <div style="background-color: rgb(196, 158, 100); width: 1px; height: 100%; margin-left: 4%; z-index: -3;"></div>
     <div style="background-color: none; z-index: 2; margin-left: 5%; transform: translateY(-400px); margin-top: 2.5%;">
       <p>I am a software engineer from NYC. I currently work at Fiserv on the Copilot team \^_^/</p>

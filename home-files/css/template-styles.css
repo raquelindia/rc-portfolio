@@ -1,14 +1,14 @@
- 
+body {
+    width: 50%;
+    overflow-x: hidden;
+}
 
 @media (max-width: 1000px) {
     .home-container {
        flex-direction: column-reverse;
-        width: 90%;
+        width: 50%;
    
     }
-
-   
-   
 
 }
 
